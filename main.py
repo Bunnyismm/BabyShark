@@ -1,5 +1,5 @@
 """----------------------------------------------------------------
-Name:       your name
+Name:       Ethan Replogle
 Assignment: Lab - Baby Shark
 Course:     CS 1430, Section X, Fall 2026
 Purpose:    This program is designed to be practice for Python
@@ -24,30 +24,17 @@ Output: The sound Baby Shark, with three verses:
 ##############
 REPEAT = 3
 
+def sharkCall(sharkType):
+    for _ in range(REPEAT):
+        print(str(sharkType)+",")
+        print("doo-doo-doo-do-do-do-do")
+    print(str(sharkType)+"!")
 
 def main():
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Baby Shark!")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Mommy Shark!")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark,")
-    print("doo-doo-doo-do-do-do-do")
-    print("Daddy Shark!")
-
+    sharkCall("Baby Shark")
+    sharkCall("Mommy Shark")
+    sharkCall("Daddy Shark")
+    
 
 if __name__ == "__main__":
     main()
